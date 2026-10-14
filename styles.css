@@ -1,0 +1,209 @@
+:root {
+  --bg: #f2f7ff;
+  --card: #ffffff;
+  --primary: #2d5bff;
+  --secondary: #00a884;
+  --text: #1b2540;
+  --danger: #c93c3c;
+  --muted: #57607c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #eef4ff, #f8fdff);
+  color: var(--text);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #14213d;
+  color: #fff;
+  padding: 12px 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+nav a,
+.link-btn {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 22px auto;
+  padding: 0 14px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  color: var(--muted);
+}
+
+.feature-list {
+  padding-left: 20px;
+}
+
+.auth-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 14px;
+}
+
+.form-card label {
+  display: block;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #c5d2eb;
+  border-radius: 8px;
+}
+
+button {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.93;
+}
+
+.subject-grid,
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.subject-btn {
+  background: #e9f0ff;
+  color: #1b2540;
+  border: 1px solid #c8d8ff;
+}
+
+.note-card {
+  border: 1px solid #e3e8f5;
+  border-radius: 10px;
+
+  padding: 14px;
+  background: #fcfdff;
+  border-left: 5px solid var(--primary);
+}
+
+.note-card h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.note-card p {
+  margin: 8px 0;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.options-wrap {
+  display: grid;
+  gap: 8px;
+}
+
+.option-btn {
+  background: #f2f6ff;
+  color: var(--text);
+  border: 1px solid #d5dff7;
+  text-align: left;
+}
+
+.details-grid p {
+  margin: 8px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.stat {
+  background: #f6f9ff;
+  border: 1px solid #d9e4ff;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.progress-wrap {
+  margin-top: 16px;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+}
+
+.msg {
+  min-height: 18px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.success {
+  color: var(--secondary);
+}
+
+.error {
+  color: var(--danger);
+}
+
+.hidden {
+  display: none;
+}

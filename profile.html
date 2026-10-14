@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | MGM Aptitude Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">MGM</div>
+      <div>
+        <h1>Student Profile</h1>
+      </div>
+    </div>
+    <nav>
+      <a href="subjects.html">Subjects</a>
+      <a href="profile.html">Profile</a>
+      <button id="logoutBtn" class="link-btn">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Account Details</h2>
+      <div id="userDetails" class="details-grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>My Activity</h2>
+      <div id="activityStats" class="stats-grid"></div>
+      <div class="progress-wrap">
+        <label for="progressBar">Practice Progress</label>
+        <progress id="progressBar" max="100" value="0"></progress>
+        <span id="progressValue">0%</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="profile.js"></script>
+</body>
+</html>

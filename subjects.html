@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subjects | MGM Aptitude Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">MGM</div>
+      <div>
+        <h1>Subjects & Practice</h1>
+      </div>
+    </div>
+    <nav>
+      <a href="subjects.html">Subjects</a>
+      <a href="profile.html">Profile</a>
+      <button id="logoutBtn" class="link-btn">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Select Subject</h2>
+      <div id="subjectList" class="subject-grid"></div>
+    </section>
+
+    <section id="notesSection" class="card hidden">
+      <h2 id="subjectTitle"></h2>
+      <h3>Topic Notes (Book Style)</h3>
+      <div id="topicNotes" class="notes-grid"></div>
+      <button id="startPracticeBtn" class="hidden">Start Practice</button>
+    </section>
+
+    <section id="practiceSection" class="card hidden">
+      <h2>MCQ Practice</h2>
+      <div id="questionCard"></div>
+      <p id="practiceMsg" class="msg"></p>
+    </section>
+  </main>
+
+  <script src="subjects.js"></script>
+</body>
+</html>

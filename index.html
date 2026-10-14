@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MGM Aptitude Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">MGM</div>
+      <div>
+        <h1>MGM Aptitude Portal</h1>
+        <p>Learn, Practice, and Win Medals</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#auth">Login / Register</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card hero">
+      <h2>Welcome to MGM Coding & Aptitude Platform</h2>
+      <p>
+        This portal is built for MGM college students to prepare for aptitude tests like
+        top coding platforms. Study subject-wise notes, practice MCQs, improve score,
+        and unlock medals based on solved questions.
+      </p>
+      <ul class="feature-list">
+        <li>Subject-wise book-style notes</li>
+        <li>Topic-wise MCQ practice</li>
+        <li>Progress percentage tracking</li>
+        <li>Bronze / Silver / Gold medal system</li>
+        <li>Personal profile activity dashboard</li>
+      </ul>
+    </section>
+
+    <section id="auth" class="auth-grid">
+      <form id="registerForm" class="card form-card">
+        <h3>Student Registration</h3>
+        <label>Username <input type="text" id="username" required /></label>
+        <label>Full Name <input type="text" id="fullName" required /></label>
+        <label>Password <input type="password" id="password" minlength="6" required /></label>
+        <label>Email (College)
+          <input type="email" id="email" placeholder="s23_surname_name@mgmcen.ac.in" required />
+        </label>
+        <label>Mobile Number
+          <input type="tel" id="mobile" placeholder="10-digit number" required />
+        </label>
+        <label>Year
+          <select id="year" required>
+            <option value="">Select Year</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+          </select>
+        </label>
+        <label>Branch
+          <select id="branch" required>
+            <option value="">Select Branch</option>
+            <option value="CSE">CSE</option>
+            <option value="ENTC">ENTC</option>
+            <option value="IT">IT</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="AI">AI</option>
+          </select>
+        </label>
+        <button type="submit">Register</button>
+        <p id="registerMsg" class="msg"></p>
+      </form>
+
+      <form id="loginForm" class="card form-card">
+        <h3>Student Login</h3>
+        <label>Email <input type="email" id="loginEmail" required /></label>
+        <label>Password <input type="password" id="loginPassword" required /></label>
+        <button type="submit">Login</button>
+        <p id="loginMsg" class="msg"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
